@@ -1,17 +1,23 @@
-import Button from '@material-ui/core/Button';
 import Link from 'next/link';
-import { AppBar, Toolbar } from "@material-ui/core";
+import {AppBar, Toolbar, Button, Typography} from "@material-ui/core";
+
+
 
 export default function Index() {
+
     return (
-        <AppBar>
-            <Toolbar>
-                <Link href="/about">
+            <AppBar position="absolute">
+                <Toolbar>
+                    <Typography variant="h6">
+                        My First Next.js Page
+                    </Typography>
+                </Toolbar>
+                <Link href="/itemList">
                     <Button variant="contained" color="primary">
-                        About
+                        To Select page
                     </Button>
                 </Link>
-            </Toolbar>
-        </AppBar>
+            </AppBar>
     )
 }
+
