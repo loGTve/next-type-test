@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Button from "@material-ui/core/Button";
+import { Button, Paper, Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
@@ -9,7 +9,9 @@ const useStyles = makeStyles({
         border: 0,
         color: 'white',
         height: 48,
-        minWidth: 500,
+        Width: 100,
+        marginTop: '30px',
+        marginLeft: '10px',
         padding: '0 30px',
         boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
     },
@@ -20,6 +22,8 @@ export default function Index() {
     const buttonStyle = useStyles();
 
     return (
+        <Paper>
+        <div>
         <Link href="/">
         <Button
             classes={{
@@ -29,5 +33,12 @@ export default function Index() {
                 index
             </Button>
         </Link>
+        </div>
+        <div>
+            <Box my='30px' mx='100px' bgcolor='lightgreen'>
+            asdf
+            </Box>
+        </div>
+        </Paper>
     )
 }
